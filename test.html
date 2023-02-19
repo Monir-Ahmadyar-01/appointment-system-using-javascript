@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table id="main-table">
+        <tr>
+            <td>name</td>
+            <td><input type="checkbox" name="" id="myCheckbox"></td>
+        </tr>
+    </table>
+    <table id="transfer-table">
+        <tr>
+            <td>name</td>
+            <td><input type="checkbox" name="" id=""></td>
+        </tr>
+    </table>
+
+    <script>
+        const checkbox = document.querySelector('input[type="checkbox"]');
+
+        checkbox.addEventListener('change', (event) => {
+            if (event.target.checked) {
+                var transfer = document.getElementById("main-table");
+                // let row = document.createElement("td");
+                transfer.style.color = "red";
+            } else {
+                console.log('Checkbox is not checked');
+            }
+        });
+    </script>
+</body>
+
+</html>
